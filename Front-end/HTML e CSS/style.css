@@ -1,0 +1,43 @@
+/*Código deve ser estruturado igualmente ao conteúdo do HTML*/
+body{
+}
+#missao{ /*Identificador*/
+    /*Alterar largura*/
+    width: 100%;
+}
+.principal{
+    background: #CCCCCC; /*Altera cor de fundo*/
+    padding: 30px;
+}
+.titulo-principal{
+    padding-left: 20px;
+}
+.titulo-centralizado{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+#missao{
+    font-size: 20px;
+}
+em strong{ /*Definindo que se deve alterar todos os strong dentro dos em*/
+    color: #FF0000; /*Altera cor do texto*/
+}
+.itens{ /*Utilizando classes*/
+    font-style: italic;
+}
+.beneficios{
+    background: #FFFFFF;
+    padding: 20px;
+}
+
+ul{
+    display: inline-block; /*Definindo item como bloco em linha, termina após conteúdo mas permite alteração*/
+    vertical-align: top; /*Definindo posição como a partir do topo, po padrão é em baixo*/
+    width: 20%;
+    margin-right: 15%;
+}
+.imagembeneficios{
+    width: 50%;
+}

@@ -1,0 +1,44 @@
+a, b, c, d, e... Dicionário comum
+
+Dicionário programação
+
+    Binário 01
+
+    Númerico 0123456789
+
+    Hexadecimal 0123456789ABCDEF
+
+Formas de representar as cores
+
+    RGB = Red Green Blue
+
+        # _ _ _ _ _ _
+
+        0 - ausência
+
+        F - Máximo
+
+        Os 2 primeiros caracteres são pra vermelho, os 2 do meio paraq o verde e os 2  últimos para o azul
+
+            #000000 - Preto
+            #FFFFFF - Branco
+
+    
+    Nome das cores
+
+        Red
+        Green 
+        Yellow
+
+    RGB 0, 1, 2, 3, ...255
+
+        0 - ausência
+        255 - Máximo
+
+        Forma de representar
+
+            rgb(255, 255, 255) - Branco
+
+            rgb(0, 0, 255) - Azul
+
+

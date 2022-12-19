@@ -1,0 +1,57 @@
+<!DOCTYPE html> <!--Tag de informação não precisa ser fechada, deve ser em maiúsculo, pelas boas práticas | Informa que estamos utilizando a versão mais recente do HTML-->
+<html lang="pt-br"> 
+    <!--
+        Tags de conteúdo precisam ser fechada | Esta informa que tudo aqui dentro se trata de HTML
+        lang - Propriedade utilizada para definir o idioma da página enste caso o português brasileiro.
+    -->
+
+    <!-- Lembre-se de deixar sua págian bem identada-->
+
+    <head> <!-- Passa inforamções para o navegador-->
+        <meta charset="UTF-8">
+        <!--
+            meta    - Tag utilizada para passar informações ao navegador
+            charset - Propriedade
+            UTF-8   - Padrão utilizado que contém por exemplo o Unicode, ele utiliza o dicio nário correto independente doo idioma do usuário
+        -->
+        <title>Barbearia Alura</title> <!--Tag que definie o título da página-->
+
+        <link rel="stylesheet" href="style.css"> <!--Estilo externo, o mais comum utilizado e poode ser usado em diversas páginas | rel - Relacionamento | href - Linka com a página de estilo style.css-->
+
+        <!--Estilo interno-->
+        <style>
+            
+            p{
+                text-align: center;                
+            }
+        </style>
+    </head>
+
+    <body> <!-- Corpo | Onde se localiza o conteúdo da nossa página-->
+        <!--
+            Tags:
+            <h1>     -- Utilizada para títulos
+            <p>      -- Utilizada para parágrafos
+            <strong> -- Utilizada para deixar em negrito
+            <em>     -- Utilizada para deixar em itálico
+        -->
+        
+        <!--
+            Utilizando estilo inline 
+            OBS: O mais correto é se utilizar estilo externo
+        -->
+        <!--
+            text-align - Utilizada para alinhar o texto, nesse caso, ao centro
+        -->
+        <h1>Sobre a Barbearia Alura</h1>
+        
+        <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+        
+        <!--
+            font-size: Utilizado para definir tamanho da fonte, neste caso será aumentada para 20px. Por padrão já vem em 16px
+        -->
+        <p style="font-size: 20px;"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+        
+        <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+    </body>
+</html>
