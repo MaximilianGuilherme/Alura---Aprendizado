@@ -1,0 +1,77 @@
+header{
+    background: #BBBBBB;
+    padding: 20px 0px;
+}
+.caixa{
+    position: relative; /*Alterando posição*/
+    width: 940px; /*Tamanho padrão ideal*/
+    margin: 0 auto;
+}
+nav{
+    display: block;
+    position: absolute;
+    top: 110px;/*Definindo o topo*/
+    right: 0; /*Definindo a direita*/
+}
+nav li{
+    display: inline;
+    margin-left: 15px;
+}
+nav a{
+    text-transform: uppercase;/*Transformar texto em maiúsculo*/
+    color: #000000;
+    font-weight: bold; /*Tranformar fonte em negrito*/
+    font-size: 22px;
+    text-decoration: none; /*Tirar a decoração do texo*/
+}
+nav a:hover{ /*Ao passar em cima*/
+    color: #C78C19;
+    text-decoration: underline;
+}
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0px;
+}
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /*Faz com que a caixa tenha tamanho fixo, assim não irá aumentar caso tenha aumentos de apdding, por exemplo*/
+    border: 2px solid #000000; /*Adicionando borda ao nosso elemento*/
+    border-radius: 10px; /*Bordas arredondadas*/
+}
+.produtos li:hover{
+    border-color: #C78C19;
+}
+.produtos li:active{ /*Quando estiver ativo/clicado*/
+    border-color: #088C19;
+}
+.produtos li:hover h2{
+    font-size: 34px;
+}
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;    
+}
+.produtos-descricao{
+    font-size: 18px;
+}
+.produtos-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+footer{
+    text-align: center;
+    background: url(bg.jpg);
+    padding: 40px 0px;
+}
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
