@@ -1,5 +1,39 @@
 /*Código deve ser estruturado igualmente ao conteúdo do HTML*/
 body{
+    margin: 0;
+}
+header{
+    background: #BBBBBB;
+    padding: 20px 0px;
+}
+.caixa{
+    position: relative; /*Alterando posição*/
+    width: 940px; /*Tamanho padrão ideal*/
+    margin: 0 auto;
+}
+nav{
+    position: absolute;
+    top: 110px;/*Definindo o topo*/
+    right: 0; /*Definindo a direita*/
+}
+.menu{
+    display: inline-block;
+    width: 100%;
+}
+nav li{
+    display: inline;
+    margin-left: 15px;
+}
+nav a{
+    text-transform: uppercase;/*Transformar texto em maiúsculo*/
+    color: #000000;
+    font-weight: bold; /*Tranformar fonte em negrito*/
+    font-size: 22px;
+    text-decoration: none; /*Tirar a decoração do texo*/
+}
+nav a:hover{ /*Ao passar em cima*/
+    color: #C78C19;
+    text-decoration: underline;
 }
 #missao{ /*Identificador*/
     /*Alterar largura*/
@@ -7,7 +41,7 @@ body{
 }
 .principal{
     background: #CCCCCC; /*Altera cor de fundo*/
-    padding: 30px;
+    padding: 30px; /*Espaçamento interno*/
 }
 .titulo-principal{
     padding-left: 20px;
@@ -36,8 +70,18 @@ ul{
     display: inline-block; /*Definindo item como bloco em linha, termina após conteúdo mas permite alteração*/
     vertical-align: top; /*Definindo posição como a partir do topo, po padrão é em baixo*/
     width: 20%;
-    margin-right: 15%;
+    margin-right: 15%;/*Espaçamento externo*/
 }
 .imagembeneficios{
     width: 50%;
+}
+footer{
+    text-align: center;
+    background: url(bg.jpg);
+    padding: 40px 0px;
+}
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
 }
