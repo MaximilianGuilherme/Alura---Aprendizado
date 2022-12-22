@@ -75,3 +75,15 @@ footer{
     font-size: 13px;
     margin: 20px 0 0;
 }
+@media screen and (max-width: 480px){
+    .caixa, .conteudo-produtos, .produtos{
+        width: auto;
+    }
+    .produtos li{
+        display: block;
+        width: auto;
+    }
+    nav{
+        position: static;
+    }
+}
