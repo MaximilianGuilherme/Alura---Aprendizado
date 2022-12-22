@@ -29,8 +29,11 @@ nav a:hover{ /*Ao passar em cima*/
     text-decoration: underline;
 }
 main{
+   
+}
+.principal-contato{
     width: 940px;
-    margin: 0 auto;
+    margin: 40px;
 }
 form{
     margin: 40px 0px;
@@ -87,4 +90,22 @@ footer{
     color: #FFFFFF;
     font-size: 13px;
     margin: 20px 0 0;
+}
+@media screen and (max-width: 480px){
+    .caixa, .principal-contato {
+        width: auto;
+    }
+    form{
+        width: auto;
+        margin: 0;
+    }
+    nav{
+        position: static;
+    }
+    textarea{
+        width: 375px;
+    }
+    .input-padrao{
+        width: auto;
+    }
 }

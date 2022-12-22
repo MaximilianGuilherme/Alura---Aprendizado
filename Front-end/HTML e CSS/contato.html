@@ -2,6 +2,7 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
         <title>Contato - Barbearia Alura</title>
         <link rel="stylesheet" href="reset.css"> <!--Reseta todos os estilos do navegador para os elementos-->
         <link rel="stylesheet" href="style-contato.css">
@@ -12,7 +13,7 @@
                 <h1><img src="logo.png" alt="Logo da Barbearia Alura"></h1><!--Alt ajuda na acessibilidade-->
 
                 <nav>
-                    <ul>
+                    <ul class="menu">
                         <li><a href="site.html">Home</a></li>
                         <li><a href="produtos.html">Produtos</a></li>
                         <li><a href="contato.html">Contato</a></li>
@@ -21,44 +22,37 @@
             </div>
         </header>
         <main>
-            <form> <!--Tag para formulários-->
-                <!--label e input andam juntos-->
-                <label for="nomesobrenome">Nome e sobrenome</label> <!--label - etiqueta do input | for liga ao id do input-->
-                <input type="text" id="nomesobrenome" class="input-padrao" required> <!--input - entrada de dados do usuário | id sempre utilizado pois o input é único-->
-
-                <label for="email">E-mail</label>
-                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com"><!--Definir o tipo do input ajuda aos usuários de celular-->
-                <!--Required diz que esse campo é obrigatório | Placeholder coloca um nome de exemplo dentro do input-->
-
-                <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
-
-                <label for="mensagem">Mensagem</label required>
-                <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea><!--cols - Define as colunas | rows - Define as linhas-->
-
-                <fieldset> <!--Organizando | fieldset é semanticamente melhor-->
-                    <legend>Como prefere nosso contato?</legend><!-- legend - semanticamente melhor-->
-                <!--Eles tem name parecidos para que apenas um seja selecionado, fazendo parte de um mesmo grupo-->
-                   <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
-
-                   <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
-
-                   <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label><!--Checked - Define que essa opção já vira marcada-->
-                </fieldset>
-
-                <fieldset>
-                    <legend>Qual horário prefere ser atendido?</legend>
-                    <select> <!--Adicionando um seletor-->
-                        <option>Manhã</option> <!--Adicionando as opções-->
-                        <option>Tarde</option>
-                        <option>Noite</option>
-                    </select>
-                </fieldset>
-
-                <label class="checkbox"><input type="checkbox" checked>Gostaria de receber novidade pelo email?</label>
-
-                <input type="submit" value="Enviar formulário" class="enviar"><!--Definindo um botão de envio com valor-->
-            </form>
+            <section class="principal-contato">
+                <form> <!--Tag para formulários-->
+                    <!--label e input andam juntos-->
+                    <label for="nomesobrenome">Nome e sobrenome</label> <!--label - etiqueta do input | for liga ao id do input-->
+                    <input type="text" id="nomesobrenome" class="input-padrao" required> <!--input - entrada de dados do usuário | id sempre utilizado pois o input é único-->
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com"><!--Definir o tipo do input ajuda aos usuários de celular-->
+                    <!--Required diz que esse campo é obrigatório | Placeholder coloca um nome de exemplo dentro do input-->
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+                    <label for="mensagem">Mensagem</label required>
+                    <textarea  rows="10" id="mensagem" class="input-padrao"></textarea><!--cols - Define as colunas | rows - Define as linhas-->
+                    <fieldset> <!--Organizando | fieldset é semanticamente melhor-->
+                        <legend>Como prefere nosso contato?</legend><!-- legend - semanticamente melhor-->
+                    <!--Eles tem name parecidos para que apenas um seja selecionado, fazendo parte de um mesmo grupo-->
+                       <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+                       <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                       <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label><!--Checked - Define que essa opção já vira marcada-->
+                    </fieldset>
+                    <fieldset>
+                        <legend>Qual horário prefere ser atendido?</legend>
+                        <select> <!--Adicionando um seletor-->
+                            <option>Manhã</option> <!--Adicionando as opções-->
+                            <option>Tarde</option>
+                            <option>Noite</option>
+                        </select>
+                    </fieldset>
+                    <label class="checkbox"><input type="checkbox" checked>Gostaria de receber novidade pelo email?</label>
+                    <input type="submit" value="Enviar formulário" class="enviar"><!--Definindo um botão de envio com valor-->
+                </form>
+            
             <table><!--Tag para criação de tabela-->
                 <thead> <!--Tag de cabeçalho da tabela-->
                     <tr> <!--Tag de linha-->
@@ -81,6 +75,7 @@
                     </tr>
                 </tbody>
             </table>
+        </section>
         </main>
         <footer> <!--Tag de rodapé-->
             <img src="logo-branco.png" alt="Logo da Barbearia Alura">
