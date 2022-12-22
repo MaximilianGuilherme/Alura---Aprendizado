@@ -83,7 +83,7 @@ td, th{
 }
 footer{
     text-align: center;
-    background: url(bg.jpg);
+    background: url(../Images/bg.jpg);
     padding: 40px 0px;
 }
 .copyright{
