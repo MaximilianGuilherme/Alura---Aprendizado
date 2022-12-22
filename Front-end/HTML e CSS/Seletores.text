@@ -1,0 +1,18 @@
+Seletores avançados
+
+> - esse seletor seleciona o elemento filho
+
+img + p - esse seletor acessa o primerio irmão após a img
+ 
+img ~ p - esse seletor acesa todos os irmãos de determinado elemento, nesse caso os de p 
+
+bola > p + h2  Nesse caso p e h2 são descendentes de bola e são irmãos
+
+Altera todos os p tirando o missão
+    p:not(#missão){ 
+        background: black;
+    }
+
+Propriedade Calc
+
+Podemos utilizar para atualizar o tamanho de algo por exemplo 
