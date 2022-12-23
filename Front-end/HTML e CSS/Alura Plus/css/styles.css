@@ -155,13 +155,16 @@ body{
         width: auto;
         padding: 0px 40px;
     }
+
     .container{
         display: block;
     }
+
     .container__titulo{
         width: 90vw;
         padding-top: 5em;
     }
+
     .container__caixa, .rodape, .secundario, .container__descricao{
         margin: 0;
         display: flex;
@@ -171,16 +174,19 @@ body{
         width: auto;
         padding: 20px;
     }
+
     .dispositivos__lista{
         margin: 0;
         display: block;
         align-items: center;
     }
+
     .rodape{
         margin-top: 2em;
         display: flex;
         align-items: center;
     }
+    
     .rodape__lista{
         display: block;
         line-height: 1.5em;
