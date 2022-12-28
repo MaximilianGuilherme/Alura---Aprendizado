@@ -35,6 +35,14 @@
     margin-bottom: 0.5em;
 }
 
+.descrição{
+    margin-right: 1em;
+}
+
+.estrelinhas{
+    margin-bottom: 1em;
+}
+
 .descrição__titulo, .descrição__titulo-livro, .descrição__text{
     line-height: 22px;
 }
