@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
@@ -37,9 +38,45 @@
                     </li>
                 </ul>
                 <img src="Images/Logo.png" alt="Logo da Alura Books" class="container-imagem">
+                <h1 class="container__título-principal"><b class="container__título--negrito">Alura</b>Books</h1>
             </div>
+
+            
+            <ul class="opções">
+                <input type="checkbox" id="botão" class="botão-menu">
+                <label for="botão">
+                    <li class="container__item--opções">Categorias</li>
+                </label>
+
+                <ul class="lista-menu">
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Programação</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Front-end</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Infraestrutura</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Business</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Design & UX</a>
+                    </li>
+                </ul>
+
+                <li class="container__item--opções">
+                    <a href="#" class="opções__link">Favoritos</a>
+                </li>
+                <li class="container__item--opções">
+                    <a href="#" class="opções__link">Minha estante</a>
+                </li>
+            </ul>        
+            
+
             <div class="container">
-                <a href="#"><img src="Images/Favoritos.svg" alt="Meus favoritos" class="container-imagem"></a>
+                <a href="#"><img src="Images/Favoritos.svg" alt="Meus favoritos" class="container-imagem container__imagem--transparente"></a>
                 <a href="#"><img src="Images/Compras.svg" alt="Meu carrinho de compras" class="container-imagem"></a>
                 <a href="#"><img src="Images/Usuario.png" alt="Meu perfil" class="container-imagem"></a>
             </div>
