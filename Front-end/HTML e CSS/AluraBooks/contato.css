@@ -40,3 +40,25 @@
     outline: none;
 }
 
+@media screen and (min-width: 1024px) {
+    
+    .contato {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contato__título{
+        font-size: 24px;
+    }
+
+    .container__contato {
+        margin-right: 1em;
+        width: 30%;
+    }
+
+    .contato__email{
+        width: 30%;
+    }
+}
+
