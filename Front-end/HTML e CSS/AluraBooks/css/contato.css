@@ -57,9 +57,17 @@
         width: 30%;
     }
 
-    .contato__email{
+    .contato__email {
         width: 30%;
     }
+
+    .contato__email:focus {
+        box-shadow: 1px 1px 5px rgb(108, 106, 106);
+        border: none;
+        transition: .2s;
+        outline: none;
+    }
+
 }
 
 @media screen and (min-width: 1728px) {

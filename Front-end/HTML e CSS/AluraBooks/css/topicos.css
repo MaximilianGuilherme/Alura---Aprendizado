@@ -50,7 +50,8 @@
     }
 
     .tópicos__link:hover {
-        background-color: rgba(255, 132, 0, 0.919);
+        background-color: transparent;
+        border: 1px solid orange;
     }
 }
 
