@@ -48,4 +48,15 @@
     .tópicos__link {
         font-size: 24px;
     }
+
+    .tópicos__link:hover {
+        background-color: rgba(255, 132, 0, 0.919);
+    }
+}
+
+@media screen and (min-width: 1728px) {
+
+    .tópicos {
+        padding: 3em 20vw;
+    }
 }

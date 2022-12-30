@@ -37,12 +37,34 @@ hr {
         display: flex;
         align-items: center;
         margin: 0.6em 0;
+        padding: 0.5em;
     }
 
+    .lista-rodapé__item:hover {
+        background: var(--azul-degrade);
+        border-radius: 30px;
+    }
+
+    .lista-rodapé__item:hover > .lista-rodapé__link {
+        color: var(--branco);
+    }
+    
     .lista-rodapé__link {
         text-decoration: none;
         color: var(--cinza-claro);
         font-size: 14px;
         margin-left: 0.6em;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+
+    .rodapé {
+        padding: 3em 0;
+    }
+
+    .lista-rodapé {
+        border-left: 1px solid var(--cinza-claro);
+        padding-left: 1em;
     }
 }
