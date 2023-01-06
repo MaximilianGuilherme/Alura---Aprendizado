@@ -171,8 +171,9 @@ body {
 
 @media screen and (min-width: 1440px) {
     .menu__lateral {
-        position: static;
+        position: sticky;
         width: 200px;
+        top: 0;
         grid-column: 1;
         grid-row: 1 / span 2;
     }
