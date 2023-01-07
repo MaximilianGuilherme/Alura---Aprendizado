@@ -230,7 +230,7 @@ body::-webkit-scrollbar-track {
     background-color: var(--cartao);
 }
 
-.cartao_destaque {
+.cartao_destaque{
     margin: 25px 0px;
     box-shadow: 0px 0px 10px rgba(36, 233, 42, 0.7);
 }
@@ -245,7 +245,9 @@ body::-webkit-scrollbar-track {
 .cartao__destaque,
 .cartao__titulo,
 .cartao__perfil,
-.cartao__botao--destaque {
+.cartao__botao--destaque,
+.cartao__titulo--video,
+.cartao__perfil--video {
     grid-column: span 2;
 }
 
@@ -255,8 +257,14 @@ body::-webkit-scrollbar-track {
 }
 
 .cartao__perfil {
+    display: flex;
     font-size: 0.9rem;
     color: var(--fonte-alternativa);
+    align-items: center;
+}
+
+.foto-usuario {
+    padding-right: 10px;
 }
 
 .cartao__info {
@@ -287,6 +295,10 @@ body::-webkit-scrollbar-track {
     justify-self: flex-end;
 }
 
+.cartao__botao:hover {
+    cursor: pointer;
+}
+
 .cartao__botao--play::before {
     content: "\e90b";
     font-size: 24px;
@@ -298,6 +310,19 @@ body::-webkit-scrollbar-track {
 
 .cartao__botao--destaque::before {
     margin-right: 8px;
+}
+
+.cartao__info--preco::before {
+    content: "\e905";
+}
+
+.cartao__botao--comprar::before {
+    content: "\e901";
+    font-size: 24px;
+}
+
+.cartao__botao--localizar::before {
+    content: "\e908";
 }
 
 .cartao--recentes {
@@ -325,8 +350,24 @@ body::-webkit-scrollbar-track {
     }
 
     .cartao__botao--destaque {
-        grid-column: auto;
+        grid-column: 1;
         padding: 16px 8px;
+    }
+
+    .cartao__info {
+        grid-column: 1;
+    }
+    
+    .cartao__perfil--video,
+    .cartao__titulo--video {
+        grid-column: auto;
+    }
+
+    .cartao__botao--video {
+        grid-column: 2;
+        grid-row: 2 / span 2;
+        width: auto;
+        align-self: flex-end;
     }
 
     .cartao--recentes {
@@ -340,7 +381,8 @@ body::-webkit-scrollbar-track {
         align-self: flex-start;
     }
 
-    .cartao--recentes .cartao__titulo {
+    .cartao--recentes,
+    .cartao__titulo {
         grid-column: auto;
     }
 
@@ -383,6 +425,7 @@ body::-webkit-scrollbar-track {
 .secao {
     display: grid;
     grid-gap: 16px;
+    margin-bottom: 20px;
 }
 
 .secao__titulo {
@@ -390,18 +433,7 @@ body::-webkit-scrollbar-track {
     font-weight: 700;
 }
 
-.cartao__info--preco::before {
-    content: "\e905";
-}
 
-.cartao__botao--comprar::before {
-    content: "\e901";
-    font-size: 24px;
-}
-
-.secao {
-    margin-bottom: 20px;
-}
 
 /*Lidando com grid-area*/
 
