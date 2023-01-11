@@ -1,0 +1,121 @@
+.principal__pico--especifico {
+    display: grid;
+    grid-template-columns: 1fr;
+} 
+
+.pico__especifico {
+    width: 100%;
+}
+
+.pico__titulo {
+    padding: 24px 16px;
+    font-weight: 700;
+    font-size: 18px;
+}
+.outros__picos {
+    display: none;
+    padding: 10px 30px 10px 0px;
+}
+
+.cartao__pico {
+    background-color: #2C343A;
+    width: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+
+}
+
+.cartao__pico--imagem {
+    width: 100%;
+}
+
+.cartao__pico--conteudo {
+    padding: 20px 10px;
+}
+
+.conteudo__pico--separar {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    padding: 10px 16px;
+}
+
+.conteudo__pico {
+    display: grid;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+.conteudo__pico--perfil {
+    display: flex;
+    align-items: center;
+}
+
+.imagem__usuario {
+    padding-right: 8px;
+}
+
+.conteudo__pico--texto {
+    padding: 10px 0px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.conteudo__pico--imagem {
+    padding: 10px 16px;
+}
+
+@media screen and (min-width: 1440px)  {
+    .principal__pico--especifico {
+        grid-template-columns: auto auto;
+        grid-template-areas:
+            "pico__especifico outros__picos"
+            "pico__titulo outros__picos"
+            "conteudo__pico--separar outros__picos"
+            "conteudo__pico outros__picos"
+        ;
+        column-gap: 20px;
+    }
+
+    .outros__picos {
+        display: block;
+    }
+
+    .pico__especifico,
+    .pico__titulo,
+    .conteudo__pico--separar,
+    .conteudo__pico {
+        grid-column: 1;
+        padding: 0px 40px;
+    }
+
+    .pico__especifico {
+        margin-top: 25px;
+        padding: 0;
+    }
+
+    .pico__especifico {
+        grid-area: pico__especifico;
+    }
+
+    .pico__titulo {
+        grid-area: pico__titulo;
+    }
+
+    .conteudo__pico--separar {
+        grid-area: conteudo__pico--separar;
+    }
+
+    .conteudo__pico {
+        grid-area: conteudo__pico;
+    }
+
+    .outros__picos {
+        grid-area: outros__picos;
+    }
+
+}
